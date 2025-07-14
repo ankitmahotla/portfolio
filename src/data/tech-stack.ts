@@ -1,0 +1,18 @@
+export const techStack = [
+  "React.js",
+  "Next.js",
+  "Node.js",
+  "Express",
+  "TypeScript",
+  "JavaScript",
+  "TailwindCSS",
+  "MongoDB",
+  "PostgreSQL",
+  "AWS EC2",
+  "S3",
+  "CloudFront",
+  "GitHub Actions (CI/CD)",
+  "GraphQL",
+  "Git",
+  "Postman",
+];
