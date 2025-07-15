@@ -5,7 +5,7 @@ import { skillIconMap } from "./skill-icons";
 export default function Skills() {
   return (
     <AnimatedSection>
-      <h2 className="text-2xl font-semibold mb-6">Tech Stack</h2>
+      <h2 className="text-2xl font-semibold mb-6">Skills</h2>
       <div className="flex flex-wrap gap-4">
         {techStack.map((skill) => {
           const Icon = skillIconMap[skill];

@@ -7,19 +7,17 @@ import {
   SiPostgresql,
   SiTypescript,
   SiTailwindcss,
-  SiGithubactions,
   SiGraphql,
   SiJavascript,
-  SiGit,
-  SiPostman,
-  SiRazorpay,
-  SiZapier,
+  SiExpo,
 } from "react-icons/si";
 import { FaAws } from "react-icons/fa";
 import { IconType } from "react-icons";
 
 export const skillIconMap: Record<string, IconType> = {
   "React.js": SiReact,
+  "React Native": SiReact,
+  Expo: SiExpo,
   "Next.js": SiNextdotjs,
   "Node.js": SiNodedotjs,
   Express: SiExpress,
@@ -30,11 +28,6 @@ export const skillIconMap: Record<string, IconType> = {
   "AWS EC2": FaAws,
   S3: FaAws,
   CloudFront: FaAws,
-  "GitHub Actions (CI/CD)": SiGithubactions,
   GraphQL: SiGraphql,
   JavaScript: SiJavascript,
-  Git: SiGit,
-  Postman: SiPostman,
-  Razorpay: SiRazorpay,
-  Zapier: SiZapier,
 };

@@ -1,5 +1,6 @@
 import AnimatedSection from "./animated-section";
-import { Mail, Github, Linkedin } from "lucide-react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { Mail } from "lucide-react";
 
 export default function About() {
   return (
@@ -25,7 +26,7 @@ export default function About() {
           rel="noopener noreferrer"
           className="hover:text-primary transition-colors"
         >
-          <Github size={22} />
+          <FaGithub size={22} />
         </a>
         <a
           href="https://www.linkedin.com/in/ankit-mahotla-012a73244/"
@@ -34,7 +35,7 @@ export default function About() {
           rel="noopener noreferrer"
           className="hover:text-primary transition-colors"
         >
-          <Linkedin size={22} />
+          <FaLinkedin size={22} />
         </a>
       </div>
     </AnimatedSection>

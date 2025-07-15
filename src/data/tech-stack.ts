@@ -1,5 +1,7 @@
 export const techStack = [
   "React.js",
+  "React Native",
+  "Expo",
   "Next.js",
   "Node.js",
   "Express",
@@ -11,8 +13,5 @@ export const techStack = [
   "AWS EC2",
   "S3",
   "CloudFront",
-  "GitHub Actions (CI/CD)",
   "GraphQL",
-  "Git",
-  "Postman",
 ];
