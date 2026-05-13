@@ -427,29 +427,60 @@ function App() {
             </motion.div>
           </motion.div>
 
-          {/* How I think */}
-          <motion.aside
-            className="relative self-end rounded-xl border border-[#26322d] bg-[#101411] p-5 shadow-[0_24px_60px_rgba(0,0,0,0.28)] sm:p-6"
-            aria-label="About Ankit"
-            initial={{ opacity: 0, y: 22 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.18 }}
-          >
-            <blockquote className="mb-5 border-l-2 border-[#5eead4] pl-4 text-[0.95rem] italic leading-relaxed text-[#f6fbf8]">
-              "{principles[0]}"
-            </blockquote>
-            <p className={eyebrow}>How I think</p>
-            <div className="grid gap-3 sm:gap-4">
-              {principles.slice(1).map((principle) => (
-                <p
-                  className="m-0 border-b border-[#26322d] pb-3 text-sm leading-relaxed text-[#d7dfdb] last:border-b-0 last:pb-0 sm:pb-4 sm:text-base"
-                  key={principle}
-                >
-                  {principle}
+          <div className="relative grid gap-4 self-end">
+            <motion.aside
+              className="relative overflow-hidden rounded-2xl border border-[#26322d] bg-[#101411] p-5 shadow-[0_24px_60px_rgba(0,0,0,0.28)] sm:p-6"
+              aria-label="Profile summary"
+              initial={{ opacity: 0, y: 22 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.14 }}
+            >
+              <div className="pointer-events-none absolute inset-x-8 top-8 h-28 rounded-full bg-[#5eead4]/[0.06] blur-3xl" aria-hidden="true" />
+              <figure className="relative mx-auto h-44 w-44 overflow-hidden rounded-full border border-[#26322d] bg-[#0d110f] shadow-[0_22px_70px_rgba(0,0,0,0.42)] sm:h-56 sm:w-56">
+                <img
+                  className="h-full w-full object-cover object-[center_28%]"
+                  src="/profile.jpeg"
+                  alt="Ankit Mahotla"
+                  fetchPriority="high"
+                />
+              </figure>
+              <div className="relative mt-5 text-center">
+                <h2 className="text-2xl font-black tracking-tight text-[#f6fbf8]">
+                  Ankit Mahotla
+                </h2>
+                <p className="mt-2 text-sm font-semibold text-[#5eead4]">
+                  Full Stack Engineer
                 </p>
-              ))}
-            </div>
-          </motion.aside>
+                <p className="mx-auto mt-3 max-w-[16rem] text-sm leading-relaxed text-[#8f9c96]">
+                  Building product interfaces, APIs, automations, and AI-enabled workflows.
+                </p>
+              </div>
+            </motion.aside>
+
+            {/* How I think */}
+            <motion.aside
+              className="relative rounded-xl border border-[#26322d] bg-[#101411] p-5 shadow-[0_24px_60px_rgba(0,0,0,0.28)] sm:p-6"
+              aria-label="How Ankit thinks"
+              initial={{ opacity: 0, y: 22 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.22 }}
+            >
+              <blockquote className="mb-5 border-l-2 border-[#5eead4] pl-4 text-[0.95rem] italic leading-relaxed text-[#f6fbf8]">
+                "{principles[0]}"
+              </blockquote>
+              <p className={eyebrow}>How I think</p>
+              <div className="grid gap-3 sm:gap-4">
+                {principles.slice(1).map((principle) => (
+                  <p
+                    className="m-0 border-b border-[#26322d] pb-3 text-sm leading-relaxed text-[#d7dfdb] last:border-b-0 last:pb-0 sm:pb-4 sm:text-base"
+                    key={principle}
+                  >
+                    {principle}
+                  </p>
+                ))}
+              </div>
+            </motion.aside>
+          </div>
         </section>
 
         {/* Skills */}
